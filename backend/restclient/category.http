@@ -1,0 +1,27 @@
+###CREATE A CATEGORY
+POST http://localhost:3000/api/category/create
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMmU2OWI0NS0zZGM5LTQ2YmItYWUxNy0wMDlkMGY0YzJhMDIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTk0MDgzMDEsImV4cCI6MTcxOTQ5NDcwMX0.zBrU4p4zfBpJwnnautRQQF-SnNV6gDAUwGw2DNkQ7NU
+Content-Type: application/json
+
+{
+    "name": "Keyboards"
+}
+
+###GET ALL CATEGORIES
+GET http://localhost:3000/api/category/all
+
+###GET CATEGORY BY ID
+GET http://localhost:3000/api/category/6f3c8e4e-124b-4e80-8dab-7ef13b7cf5da
+
+###UPDATE A CATEGORY
+PUT http://localhost:3000/api/category/6f3c8e4e-124b-4e80-8dab-7ef13b7cf5da
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMmU2OWI0NS0zZGM5LTQ2YmItYWUxNy0wMDlkMGY0YzJhMDIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTk0MDgzMDEsImV4cCI6MTcxOTQ5NDcwMX0.zBrU4p4zfBpJwnnautRQQF-SnNV6gDAUwGw2DNkQ7NU
+Content-Type: application/json
+
+{
+    "name": "Safety"
+}
+
+###DELETE A CATEGORY
+DELETE http://localhost:3000/api/category/6f3c8e4e-124b-4e80-8dab-7ef13b7cf5da
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMmU2OWI0NS0zZGM5LTQ2YmItYWUxNy0wMDlkMGY0YzJhMDIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTk0MDgzMDEsImV4cCI6MTcxOTQ5NDcwMX0.zBrU4p4zfBpJwnnautRQQF-SnNV6gDAUwGw2DNkQ7NU
