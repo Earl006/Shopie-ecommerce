@@ -4,18 +4,23 @@ import cloudinary from '../config/cloudinary';
 const prisma = new PrismaClient();
 
 export class ProductService {
-  async createProduct(data: Omit<Prisma.ProductCreateInput, 'image'>, imageFile: Express.Multer.File): Promise<Product> {
-    const result = await cloudinary.uploader.upload(imageFile.path, {
-      folder: 'shopie',
-    });
-
-    return prisma.product.create({
-      data: {
-        ...data,
-        image: result.secure_url,
-      },
-    });
-  }
+    async createProduct(data: Omit<Prisma.ProductCreateInput, 'image'>, imageFile?: Express.Multer.File): Promise<Product> {
+        let imageUrl = '';
+    
+        if (imageFile && imageFile.path) {
+          const result = await cloudinary.uploader.upload(imageFile.path, {
+            folder: 'shopie',
+          });
+          imageUrl = result.secure_url;
+        }
+    
+        return prisma.product.create({
+          data: {
+            ...data,
+            image: imageUrl,
+          },
+        });
+      }
 
   async getAllProducts(): Promise<Product[]> {
     return prisma.product.findMany({
