@@ -62,14 +62,14 @@ export const orderService = {
     return orders;
   },
 
-  async markOrderAsCompleted(orderId: string, adminId: string) {
-    const admin = await prisma.user.findUnique({
-      where: { id: adminId },
-    });
+  async markOrderAsCompleted(orderId: string) {
+    // const admin = await prisma.user.findUnique({
+    //   where: { id: adminId },
+    // });
 
-    if (!admin || !admin.isAdmin) {
-      throw new Error('Unauthorized');
-    }
+    // if (!admin || !admin.isAdmin) {
+    //   throw new Error('Unauthorized');
+    // }
 
     const updatedOrder = await prisma.order.update({
       where: { id: orderId },

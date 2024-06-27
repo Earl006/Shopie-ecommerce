@@ -1,0 +1,15 @@
+###MAKE AN ORDER
+POST http://localhost:3000/api/order/create
+Content-Type: application/json
+
+{
+    "userId":"b081df4b-3b52-4cb0-9340-d1ca02901291"
+}
+
+###GET ORDERS BY ID
+GET http://localhost:3000/api/order/b081df4b-3b52-4cb0-9340-d1ca02901291
+
+###MARK ORDER AS COMPLETED
+PUT http://localhost:3000/api/order/d507cfd6-734f-4e72-9894-44f46364c830
+Authorization: Bearer 
+

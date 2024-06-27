@@ -26,8 +26,8 @@ export const orderController = {
   async markOrderAsCompleted(req: Request, res: Response) {
     try {
       const { orderId } = req.params;
-      const { adminId } = req.body;
-      const updatedOrder = await orderService.markOrderAsCompleted(orderId, adminId);
+    //   const { adminId } = req.body;
+      const updatedOrder = await orderService.markOrderAsCompleted(orderId);
       res.status(200).json(updatedOrder);
     } catch (error: any) {
       res.status(400).json({ error: error.message });
