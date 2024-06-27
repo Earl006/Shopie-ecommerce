@@ -1,5 +1,6 @@
 ###ADD TO CART
 POST http://localhost:3000/api/cart/add
+Authorization: Bearer
 Content-Type: application/json
 
 {
@@ -10,9 +11,11 @@ Content-Type: application/json
 
 ###GET CART ITEM
 GET http://localhost:3000/api/cart/22e69b45-3dc9-46bb-ae17-009d0f4c2a02
+Authorization: Bearer
 
 ###UPDATE CART ITEMS
 PUT http://localhost:3000/api/cart/update
+Authorization: Bearer
 Content-Type: application/json
 
 {
@@ -23,9 +26,11 @@ Content-Type: application/json
 
 ###GET ALL CART ITEMS
 GET http://localhost:3000/api/cart/all/b081df4b-3b52-4cb0-9340-d1ca02901291
+Authorization: Bearer
 
 ###REMOVE ITEMS FROM CART
 POST http://localhost:3000/api/cart/remove
+Authorization: Bearer
 Content-Type: application/json
 
 {
