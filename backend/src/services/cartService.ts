@@ -63,6 +63,38 @@ export const cartService = {
 
     return cart;
   },
+  async getAllCartItems(userId: string) {
+    const cart = await prisma.cart.findUnique({
+      where: { userId },
+      include: {
+        cartItems: {
+          include: {
+            product: {
+              select: {
+                id: true,
+                name: true,
+                price: true,
+                image: true,
+                stockQuantity: true,
+              },
+            },
+          },
+        },
+      },
+    });
+
+    if (!cart) {
+      return []; 
+    }
+
+    return cart.cartItems.map(item => ({
+      id: item.id,
+      productId: item.productId,
+      quantity: item.quantity,
+      product: item.product,
+      totalPrice: item.quantity * item.product.price,
+    }));
+  },
   async removeFromCart(userId: string, productId: string) {
     const cart = await prisma.cart.findUnique({
       where: { userId },
@@ -95,6 +127,10 @@ export const cartService = {
   },
 
   async updateCartItemQuantity(userId: string, productId: string, newQuantity: number) {
+    if (typeof newQuantity !== 'number' || newQuantity < 0) {
+      throw new Error('Invalid quantity. Please provide a non-negative number.');
+    }
+
     const cart = await prisma.cart.findUnique({
       where: { userId },
       include: { cartItems: true },
@@ -121,7 +157,7 @@ export const cartService = {
     const quantityDifference = newQuantity - cartItem.quantity;
 
     if (product.stockQuantity < quantityDifference) {
-      throw new Error('Insufficient stock');
+      throw new Error('Insufficient items in stock');
     }
 
     const updatedCartItem = await prisma.$transaction([
