@@ -13,6 +13,57 @@
     right: 0;
     position: sticky;
     z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15rem;
+    padding: 5px;
+}
+.left{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: white;
+        font-size: x-large;
+        font-weight: bolder;
+        font-family: elephant;
+        text-transform: capitalize;
+    }
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    gap: 15rem;
+}
+input[type="search"]{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+input[type="search"]:focus{
+    outline: none;
+}
+.right > .profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
 }
 .maincontent{
     display: flex;
@@ -26,8 +77,309 @@
     position: sticky;
     top: 0;
     position: fixed;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;    
 }
+.sidebar > .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #999;
+    border-radius: 8px;
+}
+.sidebar > .home > img{
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar > .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+.sidebar > .product:hover{
+    background-color: #999;
+}
+.sidebar > .product > img{
+    width: 30px;
+    height: 30px;
+    color: black;
+    /* filter: grayscale(100%); */
+    filter: grayscale(100%) brightness(0%) contrast(100%);
+}
+
+.sidebar > .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+.sidebar > .category:hover{
+    background-color: #999;
+}
+.sidebar > .category > img{
+    width: 30px;
+    height: 30px;
+    color: black;
+    /* filter: grayscale(100%); */
+    filter: grayscale(100%) brightness(0%) contrast(100%);
+}
+
+.sidebar > .order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+}
+.sidebar > .order:hover{
+    background-color: #999;
+}
+.sidebar > .order > img{
+    width: 30px;
+    height: 30px;
+    color: black;
+    /* filter: grayscale(100%); */
+    filter: grayscale(100%) brightness(0%) contrast(100%);
+}
+
+.sidebar > .logout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    padding: 10px;
+    border-radius: 8px;
+}
+.sidebar > .logout:hover{
+    background-color: #999;
+}
+.sidebar > .logout > img{
+    width: 30px;
+    height: 30px;
+    color: black;
+    /* filter: grayscale(100%); */
+    filter: grayscale(100%) brightness(0%) contrast(100%);
+}
+
+/* ==================================main content area===================================== */
 .content{
     margin-left: 7rem;
     margin-top: 1rem;
+}
+/* ************************report************************ */
+.report{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: start;
+    width: 89vw;
+    gap: 1rem;
+}
+.report > h2{
+    text-transform: capitalize;
+}
+.report > .cards{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+    
+}
+.report > .cards > .card1{
+    width: 28rem;
+    height: 5rem;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3rem;
+    gap: 1rem;
+    border-radius: 10px;
+}
+.report > .cards > .card1 > img{
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #043809;
+}
+.report > .cards > .card1 > .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.report > .cards > .card1 > .description > small{
+    color: #6a6464;
+    text-transform: uppercase;
+}
+.report > .cards > .card1 > .description > p {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.report > .cards > .card2{
+    width: 28rem;
+    height: 5rem;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3rem;
+    gap: 1rem;
+    border-radius: 10px;
+}
+.report > .cards > .card2 > img{
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #043809;
+}
+.report > .cards > .card2 > .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+}
+.report > .cards > .card2 > .description > small{
+    color: #6a6464;
+    text-transform: uppercase;
+}
+.report > .cards > .card2 > .description > p {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.report > .cards > .card3{
+    width: 28rem;
+    height: 5rem;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 3rem;
+    gap: 1rem;
+    border-radius: 10px;
+}
+.report > .cards > .card3 > img{
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #043809;
+}
+.report > .cards > .card3 > .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 5px;
+}
+.report > .cards > .card3 > .description > small{
+    color: #6a6464;
+    text-transform: uppercase;
+}
+.report > .cards > .card3 > .description > p {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* ******************************performance*************************** */
+.performance{
+    margin-top: 4rem;
+    width: 87vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    gap: 1rem;
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+.performance > h2{
+    text-transform: capitalize;
+}
+.performance > .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.performance > .cards > .card1{
+    width: 28rem;
+    height: 5rem;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 3rem;
+    justify-content: center;
+    gap: 5px;
+}
+.performance > .cards > .card1 > small{
+    text-transform: uppercase;
+    color: #4e697d;
+}
+.performance > .cards > .card1 > p{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.performance > .cards > .card2{
+    width: 28rem;
+    height: 5rem;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 3rem;
+    justify-content: center;
+    gap: 5px;
+}
+.performance > .cards > .card2 > small{
+    text-transform: uppercase;
+    color: #4e697d;
+}
+.performance > .cards > .card2 > p{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.performance > .cards > .card3{
+    width: 28rem;
+    height: 5rem;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 3rem;
+    justify-content: center;
+    gap: 5px;
+}
+.performance > .cards > .card3 > small{
+    text-transform: uppercase;
+    color: #4e697d;
+}
+.performance > .cards > .card3 > p{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
