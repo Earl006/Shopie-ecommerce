@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.topbar{
+    background-color: black;
+    margin-top: -7px;
+    margin-left: -7px;
+    margin-right: -7px;
+    height: 5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
+    z-index: 4;
+}
+.maincontent{
+    display: flex;
+}
+.sidebar{
+    background-color: #d9d9d9;
+    width: 7rem;
+    left: 0;
+    margin-left: -7px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    position: fixed;
+}
+.content{
+    margin-left: 7rem;
+    margin-top: 1rem;
+}

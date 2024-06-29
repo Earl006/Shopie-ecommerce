@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: white;
+}
+.service1{
+    background-color: #edf1f3;
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+    padding-left: 8rem;
+    padding-right: 4rem;
+    height: 25rem;
+}
+.service1.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.service1 > .text > p{
+    font-size: xxx-large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.service1 > .text > button {
+    margin-top: 3rem;
+    height: 3rem;
+    width: 15rem;
+    background-color: #212529;
+    border: none;
+    color: white;
+    font-size: large;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+.service1 > .text > button:hover{
+    background-color: black;
+}
+.service1 > image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service1>image>img{
+    margin-left: 3rem;  
+}
+/* ============================services============================== */
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+.services > 
+.card1,
+.card2,
+.card3,
+.card4{
+    width: 18rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+    h2{
+        text-transform: uppercase;
+    }
+    p{
+        color: #aeaeae;
+        font-size: large;
+    }
+
+}
+/* ============================MOBILE PRODUCTS=============================== */
+.mobile_products{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    
+    h2{
+        text-transform: uppercase;
+        margin-left: 1.8rem;
+    }
+}
+.mobiles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mobiles > .phone-card > .phone{
+    background-color: #dfdfdf;
+    width: 14rem;
+    height: 18rem;
+    img{
+        margin-top: 2rem;
+    }
+}
+.phone-card > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+/* =================================SMART WARCHES=============================== */
+.watch_products{
+    display: flex;
+    margin-top: 4rem;
+    flex-direction: column;
+    h2{
+        margin-left: 1.8rem;
+        margin-bottom: 10px;
+    }
+}
+.watches{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.watch{
+    background-color: #dfdfdf;
+    width: 14rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;   
+}
+.watchcard > .price{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+/* =================================NEW SELL SECTION=============================== */
+.newsell{
+    background-color: yellowgreen;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: start;
+        gap: 15px;
+        small{
+            color: ;
+        }
+    }
+}
+
