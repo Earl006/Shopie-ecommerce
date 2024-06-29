@@ -16,6 +16,20 @@
     position: relative;
   }
   
+  .auth-messages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1; /* Ensure messages appear above other content */
+  }
+  
+  .auth-content {
+    display: flex;
+    width: 100%; /* Full width */
+  }
+  
   .auth-left, .auth-right {
     padding: 40px;
     color: #fff;
@@ -27,7 +41,7 @@
   
   .auth-right {
     flex: 1;
-    background-color: grey; 
+    background-color: grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,6 +121,7 @@
     margin-top: 10px;
     font-size: 14px;
     text-align: center;
+    z-index: 1; /* Ensure messages appear above other content */
   }
   
   .error-message {
@@ -152,7 +167,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    width:90px;
+    width: 90px;
   }
   
   .home-button:hover {

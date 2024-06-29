@@ -21,7 +21,10 @@
             </div>
           </div>
           <div class="input-group">
-            <a routerLink="/reset">Forgot password? Reset</a>
+            <span style="color: white; margin-left: 25px">Forgot password? </span>
+            <a routerLink="/reset" style="color: grey; transition: color white 0.3s ease; display: inline-block;">
+              Reset
+            </a>
           </div>
           <button type="submit" [disabled]="loginForm.invalid">Login</button>
           <div class="links">
