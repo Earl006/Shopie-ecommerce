@@ -1,1 +1,65 @@
-<p>register works!</p>
+<div class="auth-container">
+  <button class="home-button" routerLink="/home">Home</button>
+  <div class="auth-box">
+    <div class="auth-left">
+      <h2>Register</h2>
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <div class="input-with-icon">
+            <i class="fas fa-user"></i>
+            <input id="username" formControlName="username" type="text" />
+          </div>
+          <div class="error" *ngIf="registerForm.controls['username'].invalid && registerForm.controls['username'].touched">
+            Username is required
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <div class="input-with-icon">
+            <i class="fas fa-envelope"></i>
+            <input id="email" formControlName="email" type="email" />
+          </div>
+          <div class="error" *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched">
+            Valid email is required
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input id="password" formControlName="password" type="password" />
+          </div>
+          <div class="error" *ngIf="registerForm.controls['password'].invalid && registerForm.controls['password'].touched">
+            Password is required
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="input-with-icon">
+            <i class="fas fa-lock"></i>
+            <input id="confirmPassword" formControlName="confirmPassword" type="password" />
+          </div>
+          <div class="error" *ngIf="registerForm.controls['confirmPassword'].invalid && registerForm.controls['confirmPassword'].touched">
+            Confirm password is required
+          </div>
+        </div>
+
+        <button type="submit" [disabled]="registerForm.invalid">Register</button>
+
+        <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+        <div class="success-message" *ngIf="successMessage">{{ successMessage }}</div>
+      </form>
+      <p class="login-link">
+        Already have an account? <a routerLink="/login">Login</a>
+      </p>
+    </div>
+    <div class="auth-right">
+      <h2>Welcome Back!</h2>
+      <p>To keep connected with us please login with your personal info</p>
+    </div>
+  </div>
+</div>
