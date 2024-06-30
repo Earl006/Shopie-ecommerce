@@ -1,0 +1,12 @@
+<div class="form-header">
+    <h2>Create Category</h2>
+    <button class="close-btn" (click)="closeForm()">✖</button>
+</div>
+
+<form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="categoryName">Category Name</label>
+        <input type="text" id="categoryName" formControlName="categoryName" required />
+    </div>
+    <button type="submit">Submit</button>
+</form>

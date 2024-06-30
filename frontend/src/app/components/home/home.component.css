@@ -141,15 +141,17 @@
 }
 /* =================================NEW SELL SECTION=============================== */
 .newsell{
-    background-color: yellowgreen;
+    background-color: #edf1f3;
     margin-top: 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 4rem;
+    gap: 3rem;
     .text{
         display: flex;
         flex-direction: column;
@@ -157,8 +159,155 @@
         justify-content: start;
         gap: 15px;
         small{
-            color: ;
+            font-size: x-large;
+        }
+        p{
+            font-size: 70px;
+            text-transform: uppercase;
+        }
+        button{
+            color: #edf1f3;
+            background-color: #1c1f23;
+            width: 12rem;
+            height: 3rem;
+            cursor: pointer;
+            text-align: center;
+            transition: all ease-in-out 0.5s;
+            text-transform: uppercase;
+            border: none;
+        }
+        button:hover{
+            background-color: black;
         }
     }
+    img{
+        width: 500px;
+        height: 450px;
+    }
 }
+/* =======================================LATEST POST=================================================  */
+.latestpost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+.latestpost > h1{
+    margin-left: 7rem;
+}
+.latestpost > .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.latestpost > .cards > .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 
+}
+.latestpost > .cards > .card > .carda{
+    background-color: #d4d7dc;
+    width: 20rem;
+    height: 12rem;
+}
+.latestpost > .cards > .card > .carda2{
+    background-color: #bfbebd;
+}
+.latestpost > .cards > .card > .carda3{
+    background-color: #eeeeee;
+}
+.latestpost > .cards > .card > .text{
+    display: flex;
+    flex-direction: column;
+}
+.latestpost > .cards > .card > .text > small{
+    text-transform: uppercase;
+    color: #6c757d;
+}
+.latestpost > .cards > .card > .text > p{
+    text-transform: uppercase;
+    font-size: large;
+}
+/* =======================================blog section=================================================  */
+.blog_section{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.blog_section > img{
+    width: 50px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.blog_section > span > p{
+    font-size: xx-large;
+    color: #212529;
+}
+.blog_section > p{
+    font-size: xxx-large;
+}
+.blog_section > small{
+    text-transform: uppercase;
+    margin-top: -1.5rem;
+}
+/* ===================================SUBSCRIBE US NOW====================================== */
+.subscribe_box{
+    margin-top: 4rem;
+    background-color: #212529;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 30px;
+    gap: 12rem;
+}
+.subscribe_box > .left{
+    margin-left: 2rem;
+}
+.subscribe_box > .left > h2{
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+.subscribe_box > .left > p{
+    color: #aeaeae;
+    text-transform: capitalize;
+}
+.subscribe_box > .sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe_box > .sign > input{
+    width: 20rem;
+    height: 3rem;
+    padding-left: 10px;
+}
+.subscribe_box > .sign > input:focus{
+    outline: none;
+}
+.subscribe_box > .sign > button{
+    width: 12rem;
+    height: 3.25rem;
+    margin-left: -10px;
+    border: none;
+    background-color: #4ed2ff;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    color: white;
+    transition: all ease-in-out 0.5s;
+}
+.subscribe_box > .sign > button:hover{
+    background-color: black;
+}
