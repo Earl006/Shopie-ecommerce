@@ -1,6 +1,6 @@
 ###CREATE PRODUCT
 POST http://localhost:3000/api/product/create
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMmU2OWI0NS0zZGM5LTQ2YmItYWUxNy0wMDlkMGY0YzJhMDIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTk0NzYyMzUsImV4cCI6MTcxOTU2MjYzNX0.uPwPdk0cDRiDCUO0u66weuLFgD-oMoxx3clVyV99kWA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3ZTUyMzBhMi1jNTE5LTQ2YjItYjY0YS1mZThlMTFlMDY1OTUiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzE5NzY1MTkzLCJleHAiOjE3MTk4NTE1OTN9.R8UZBuU0ldRi8QoenC4JTPcMU5iBxN1ZtwVnL4GBHVc
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -27,7 +27,7 @@ Content-Disposition: form-data; name="stockQuantity"
 Content-Disposition: form-data; name="image"; filename="phone-case.jpg"
 Content-Type: image/jpeg
 
-< /home/earljoe/Downloads/watch.jpg
+< /home/earljoe/Downloads/watch.jpg>
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 ###GET ALL PRODUCTS
