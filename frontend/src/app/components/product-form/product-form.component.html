@@ -1,12 +1,9 @@
-<div class="form-header">
-    <h2>Create Product</h2>
-    <button class="close-btn" (click)="closeForm()">✖</button>
-</div>
-
 <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
     <div>
         <label for="productImage">Product Image</label>
-        <input type="file" id="productImage" formControlName="productImage" />
+        <input type="file" id="productImage" formControlName="productImage" accept="image/*" />
+        <!-- Display image preview if productForm is valid and productImage has a value -->
+        <img *ngIf="productForm.get('productImage')?.valid && productForm.get('productImage')?.value" [src]="productForm.get('productImage')?.value" style="max-width: 200px; margin-top: 10px;">
     </div>
     <div>
         <label for="productName">Product Name</label>
@@ -20,5 +17,5 @@
         <label for="categoryName">Category Name</label>
         <input type="text" id="categoryName" formControlName="categoryName" />
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" [disabled]="!productForm.valid">Submit</button>
 </form>
