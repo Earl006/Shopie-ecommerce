@@ -35,20 +35,14 @@ import {
   createNgModule,
   findLocaleData,
   formatRuntimeError,
-<<<<<<<< HEAD:frontend/.angular/cache/18.0.4/vite/deps/chunk-C5G2ELQ7.js
-========
   getLocaleCurrencyCode,
->>>>>>>> 14657ff65389ee3bc05e630d27a9bb27a6decadd:frontend/.angular/cache/18.0.4/vite/deps/chunk-LIK5DR5J.js
   getLocalePluralCase,
   inject,
   isPromise,
   isSubscribable,
   numberAttribute,
   performanceMarkFeature,
-<<<<<<<< HEAD:frontend/.angular/cache/18.0.4/vite/deps/chunk-C5G2ELQ7.js
-========
   registerLocaleData,
->>>>>>>> 14657ff65389ee3bc05e630d27a9bb27a6decadd:frontend/.angular/cache/18.0.4/vite/deps/chunk-LIK5DR5J.js
   setClassMetadata,
   stringify,
   untracked,
@@ -4920,10 +4914,7 @@ export {
   getDOM,
   setRootDomAdapter,
   DomAdapter,
-<<<<<<<< HEAD:frontend/.angular/cache/18.0.4/vite/deps/chunk-C5G2ELQ7.js
-========
   PlatformNavigation,
->>>>>>>> 14657ff65389ee3bc05e630d27a9bb27a6decadd:frontend/.angular/cache/18.0.4/vite/deps/chunk-LIK5DR5J.js
   DOCUMENT,
   PlatformLocation,
   LOCATION_INITIALIZED,
@@ -4934,14 +4925,6 @@ export {
   PathLocationStrategy,
   HashLocationStrategy,
   Location,
-<<<<<<<< HEAD:frontend/.angular/cache/18.0.4/vite/deps/chunk-C5G2ELQ7.js
-  parseCookieValue,
-  CommonModule,
-  PLATFORM_BROWSER_ID,
-  isPlatformServer,
-  ViewportScroller,
-  XhrFactory
-========
   NumberFormatStyle,
   Plural,
   FormStyle,
@@ -5023,7 +5006,6 @@ export {
   provideNetlifyLoader,
   PRECONNECT_CHECK_BLOCKLIST,
   NgOptimizedImage
->>>>>>>> 14657ff65389ee3bc05e630d27a9bb27a6decadd:frontend/.angular/cache/18.0.4/vite/deps/chunk-LIK5DR5J.js
 };
 /*! Bundled license information:
 
@@ -5034,8 +5016,4 @@ export {
    * License: MIT
    *)
 */
-<<<<<<<< HEAD:frontend/.angular/cache/18.0.4/vite/deps/chunk-C5G2ELQ7.js
-//# sourceMappingURL=chunk-C5G2ELQ7.js.map
-========
 //# sourceMappingURL=chunk-LIK5DR5J.js.map
->>>>>>>> 14657ff65389ee3bc05e630d27a9bb27a6decadd:frontend/.angular/cache/18.0.4/vite/deps/chunk-LIK5DR5J.js
