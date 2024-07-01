@@ -1,0 +1,176 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+  }
+  
+  .auth-box {
+    display: flex;
+    width: 800px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px white;
+    position: relative;
+  }
+  
+  .auth-messages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1; /* Ensure messages appear above other content */
+  }
+  
+  .auth-content {
+    display: flex;
+    width: 100%; /* Full width */
+  }
+  
+  .auth-left, .auth-right {
+    padding: 40px;
+    color: #fff;
+  }
+  
+  .auth-left {
+    flex: 1;
+  }
+  
+  .auth-right {
+    flex: 1;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-right h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .auth-right p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .input-with-icon i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  
+  .input-group .error {
+    margin-top: 5px;
+    font-size: 12px;
+    color: red;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: grey;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+  }
+  
+  .error-message, .success-message {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    z-index: 1; /* Ensure messages appear above other content */
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .success-message {
+    color: green;
+  }
+  
+  .auth-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: grey;
+    transform: skewX(-20deg);
+    transform-origin: left;
+    z-index: -1;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-link a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .home-button {
+    background-color: grey;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 90px;
+  }
+  
+  .home-button:hover {
+    background-color: #555;
+  }
+  
