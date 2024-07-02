@@ -1,33 +1,33 @@
 ###CREATE PRODUCT
 POST http://localhost:3000/api/product/create
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3ZTUyMzBhMi1jNTE5LTQ2YjItYjY0YS1mZThlMTFlMDY1OTUiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzE5NzY1MTkzLCJleHAiOjE3MTk4NTE1OTN9.R8UZBuU0ldRi8QoenC4JTPcMU5iBxN1ZtwVnL4GBHVc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjZjRjOGU0OS0wMWMxLTQ1MTgtODc4Ny0wNTEzYzI1MWIwMjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTk4NDM0MTksImV4cCI6MTcxOTkyOTgxOX0.HGOSuFTycTGzqh86ZggcwzIoLCYFdqbTlCUi2MP2zgY
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="name"
 
-Wlisth Men's European Business Waterproof Watch - BLACK
+television
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="shortDescription"
 
-Sleek, durable, and shock-absorbent watch offering superior protection without compromising style.
+samsang best television lcd smart tv
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="price"
 
-1500.00
+8500.00
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="categoryId"
 
-4d21890b-b7ba-496c-8ddb-5cf240fa420d
+14b8608f-e9b9-49db-8ab3-239fde7220f4
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 Content-Disposition: form-data; name="stockQuantity"
 
 100
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="image"; filename="phone-case.jpg"
+Content-Disposition: form-data; name="image"; filename="television.jpeg"
 Content-Type: image/jpeg
 
-< /home/earljoe/Downloads/watch.jpg>
+< C:\Users\Administrator\Desktop\television.jpeg
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 ###GET ALL PRODUCTS
@@ -65,7 +65,7 @@ Content-Disposition: form-data; name="stockQuantity"
 Content-Disposition: form-data; name="image"; filename="phone-case.jpg"
 Content-Type: image/jpeg
 
-< /home/earljoe/Downloads/phone-charger.jpg
+< C:\Users\Administrator\Desktop/clinton.jpg
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
 
 ###DELETE PRODUCT

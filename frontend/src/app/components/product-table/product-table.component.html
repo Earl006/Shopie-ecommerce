@@ -1,1 +1,35 @@
-<p>product-table works!</p>
+<div class="container">
+  <div class="main">
+    <h1>Product Details</h1>
+    <button routerLink="/create">Add Product</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Image</th>
+          <th>Product Name</th>
+          <th>Product Description</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Stock Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td><img [src]="product.image" alt="{{ product.name }}" width="50"></td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.shortDescription }}</td>
+          <td>{{ product.price | currency }}</td>
+          <td>{{  product.categoryId }}</td>
+          <td>{{ product.stockQuantity }}</td>
+          <div>
+            <td>
+              <button (click)="updateProduct(product)"><img src="../icons/edit.png" alt=""></button>
+              <button (click)="deleteProduct(product.id)"><img src="../icons/delete.jpeg" alt=""></button>
+            </td>
+          </div>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

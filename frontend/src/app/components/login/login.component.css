@@ -5,7 +5,10 @@
     height: 100vh;
     background-color: #000; /* Black background */
   }
-  
+  .auth-container > button > img{
+    width: 30px;
+    height: 30px;
+  }
   .auth-box {
     display: flex;
     width: 800px;

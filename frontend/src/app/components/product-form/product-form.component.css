@@ -2,12 +2,19 @@ form {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    max-width: 600px;
+    max-width: 35rem;
     margin: auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
+  }
+ 
+  form > div{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
   }
   .form-header{
     display: flex;
@@ -27,12 +34,13 @@ form {
   input[type="text"],
   textarea,
   input[type="file"] {
-    padding: 10px;
+    height: 2rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
     width: 100%;
     box-sizing: border-box;
+    padding-left: 10px;
   }
   
   input[type="file"] {
@@ -41,7 +49,7 @@ form {
   
   textarea {
     resize: vertical;
-    height: 100px;
+    height: 3rem;
   }
   
   button {

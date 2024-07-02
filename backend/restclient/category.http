@@ -1,10 +1,10 @@
 ###CREATE A CATEGORY
 POST http://localhost:3000/api/category/create
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyMmU2OWI0NS0zZGM5LTQ2YmItYWUxNy0wMDlkMGY0YzJhMDIiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTk0NzYyMzUsImV4cCI6MTcxOTU2MjYzNX0.uPwPdk0cDRiDCUO0u66weuLFgD-oMoxx3clVyV99kWA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjZjRjOGU0OS0wMWMxLTQ1MTgtODc4Ny0wNTEzYzI1MWIwMjEiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE3MTk4NDM1NzksImV4cCI6MTcxOTkyOTk3OX0.EEm1HbqAgYPb_FC78GF-mkjHfXMKTAXWYaJ9B_1ll2s
 Content-Type: application/json
 
 {
-    "name": "Watches"
+    "name": "calculator"
 }
 
 ###GET ALL CATEGORIES

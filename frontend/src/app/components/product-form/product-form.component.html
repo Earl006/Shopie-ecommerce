@@ -5,20 +5,28 @@
 
 <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
     <div>
+        <label for="name">Product Name</label>
+        <input type="text" id="name" formControlName="name" />
+    </div>
+    <div>
+        <label for="shortDescription">Product Description</label>
+        <textarea id="shortDescription" formControlName="shortDescription"></textarea>
+    </div>
+    <div>
+        <label for="price">Product Price</label>
+        <input type="text" id="price" formControlName="price">
+    </div>
+    <div>
+        <label for="categoryId">Category Id</label>
+        <input type="text" id="categoryId" formControlName="categoryId" />
+    </div>
+    <div>
+        <label for="stockQuantity">Stock Quantity</label>
+        <input type="text" id="stockQuantity" formControlName="stockQuantity" />
+    </div>
+    <div>
         <label for="productImage">Product Image</label>
-        <input type="file" id="productImage" formControlName="productImage" />
-    </div>
-    <div>
-        <label for="productName">Product Name</label>
-        <input type="text" id="productName" formControlName="productName" />
-    </div>
-    <div>
-        <label for="productDescription">Product Description</label>
-        <textarea id="productDescription" formControlName="productDescription"></textarea>
-    </div>
-    <div>
-        <label for="categoryName">Category Name</label>
-        <input type="text" id="categoryName" formControlName="categoryName" />
+        <input type="file" id="productImage"  formControlName="productImage" /><!-- (change)="onFileChange($event)" -->
     </div>
     <button type="submit">Submit</button>
 </form>
